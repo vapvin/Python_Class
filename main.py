@@ -101,3 +101,23 @@ whale = Whale()
 lift_off(parrot) # prints `Parrot flying`
 lift_off(airplane) # prints `Airplane flying`
 lift_off(whale) # Throws the error `'Whale' object has no attribute 'fly'`
+
+class OpenClose:
+
+    def open(self):
+        print("작업을 시작합니다.")
+
+    def do_something(self):
+        print("작업을 진행합니다...")
+        print("작업을 진행합니다...")
+        print("작업을 진행합니다...")
+
+    def close(self):
+        print("작업을 종료합니다.")
+
+
+def doOpenClose():
+    d = OpenClose()
+    d.open()
+    d.do_something()
+    d.close()
