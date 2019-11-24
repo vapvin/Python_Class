@@ -77,3 +77,27 @@ class Korea(AbstractCountry):
 
     def show_name(self):
         print('국가 이름은 : ', self.name)
+
+
+class Parrot:
+    def fly(self):
+        print("Parrot flying")
+
+class Airplane:
+    def fly(self):
+        print("Airplane flying")
+
+class Whale:
+    def swim(self):
+        print("Whale swimming")
+
+def lift_off(entity):
+    entity.fly()
+
+parrot = Parrot()
+airplane = Airplane()
+whale = Whale()
+
+lift_off(parrot) # prints `Parrot flying`
+lift_off(airplane) # prints `Airplane flying`
+lift_off(whale) # Throws the error `'Whale' object has no attribute 'fly'`
