@@ -164,3 +164,17 @@ class CustomTests(unittest.TestCase):
 # unittest를 실행
 if __name__ == '__main__':
     unittest.main()
+
+
+def convert(s):
+    """int로 변환"""
+    try:
+        a = int(s)
+        print('성공')
+    except ValueError:
+        print('실패 : ValueError')
+        a = -1
+    except TypeError:
+        print('실패 : TypeError')
+        a = -1
+    return a
