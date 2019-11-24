@@ -17,3 +17,20 @@ class Korea(Country):
 
     def show_name(self):
         print('국가 이름은 : ', self.name)
+
+
+class CustomClass:
+
+    # instance method
+    def add_instance_method(self, a,b):
+        return a + b
+
+    # classmethod
+    @classmethod
+    def add_class_method(cls, a, b):
+        return a + b
+
+    # staticmethod
+    @staticmethod
+    def add_static_method(a, b):
+        return a + b
