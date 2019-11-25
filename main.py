@@ -178,3 +178,10 @@ def convert(s):
         print('실패 : TypeError')
         a = -1
     return a
+
+
+import math
+
+n = math.sqrt(9.0)
+
+print(n)  # 3.0 출력
