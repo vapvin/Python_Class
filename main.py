@@ -230,6 +230,21 @@ rect1 = Rectangle(5, 5)
 rect2 = Rectangle(2, 5)
 rect1.printCount()  # 2
 
+# 인스턴스 생성
+r = Rectangle(2, 3)
+
+# 메서드 호출
+area = r.calcArea()
+print("area = ", area)
+
+# 인스턴스 변수 엑세스
+r.width = 10
+print("width = ", r.width)
+
+# 클래스 변수 엑세스
+print(Rectangle.count)
+print(r.count)
+
 
 import math
 
